@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nqobile | Software-Developer</title>
+    <link
+      rel="shortcut icon"
+      href="assets/icons/code (1).png"
+      type="image/x-icon"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script defer src="index.js"></script>
+  </head>
+
+  <body class="main-content">
+    <div id="overlay"></div>
+    <!-- page loader -->
+    <div class="loader">
+      <div class="wrapper" id="wrapper">
+        <video autoplay muted loop id="video">
+          <source src="assets/animation/glitch.mp4" type="video/mp4" />
+        </video>
+        <div id="gif-container">
+          <img src="assets/animation/programmer.gif" alt="" />
+        </div>
+        <h4 id="demo"></h4>
+      </div>
+    </div>
+    <div class="navContainer">
+      <div class="navContent">
+        <div class="logo">
+          <img src="assets/images/african king.jpg" />
+        </div>
+        <nav class="nav">
+          <ul>
+            <a href="#index" class="link">
+              <li class="btn btn-border-underline">Home</li>
+            </a>
+            <a href="#about">
+              <li class="btn btn-border-underline">About</li>
+            </a>
+            <a href="#services">
+              <li class="btn btn-border-underline">Services</li>
+            </a>
+            <a href="#projects">
+              <li class="btn btn-border-underline">Projects</li>
+            </a>
+            <a href="#contact">
+              <li class="btn btn-border-underline">Contact Me</li>
+            </a>
+          </ul>
+        </nav>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/nqobile-ngobeni-57b040237/">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://wa.me/+27618187972">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+        <div class="weather" id="weather">
+          <!-- <i id="weatherIcon"></i> -->
+          <div class="temp">
+            <p class="weatherItem weatherText"></p>
+            <img
+              src="assets/animation/output-onlinegiftools (2).gif"
+              width="35px"
+            />
+            <p class="weatherItem temperature"></p>
+          </div>
+          <div class="local">
+            <p class="weatherItem date"></p>
+            <p class="weatherItem city"></p>
+            <p class="weatherItem country"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <!-- mobile nav -->
+      <div class="mobileNavigation" id="mobileNavigation">
+        <div class="openMenu">
+          <img src="assets/icons/open.png" id="openMenu" class="menuBtn" />
+        </div>
+        <div class="mobileNav" id="menu">
+          <img src="assets/icons/close.png" id="closeMenu" class="menuBtn" />
+          <div class="mobileLogo">
+            <img src="assets/animation/code.gif" class="mobileIcon" />
+          </div>
+          <ul class="mobileNavList">
+            <li>
+              <a href="#index"
+                ><img src="assets/icons/home.png" />
+                <h4>Home</h4></a
+              >
+            </li>
+            <li>
+              <a href="#about"
+                ><img src="assets/icons/about.png" />
+                <h4>About</h4></a
+              >
+            </li>
+            <li>
+              <a href="#services"
+                ><img src="assets/icons/services.png" />
+                <h4>Services</h4></a
+              >
+            </li>
+            <li>
+              <a href="#projects"
+                ><img src="assets/icons/portfolio.png" />
+                <h4>Projects</h4></a
+              >
+            </li>
+            <li>
+              <a href="#contact"
+                ><img src="assets/icons/contact.png" />
+                <h4>Contact</h4></a
+              >
+            </li>
+          </ul>
+
+          <div class="weather">
+            <div class="temp">
+              <p class="weatherItem weatherText"></p>
+              <img src="assets/icons/snowflake.png" width="20px" />
+              <p class="weatherItem temperature"></p>
+            </div>
+            <div class="local">
+              <p class="weatherItem date"></p>
+              <span>
+                <p class="weatherItem city"></p>
+                <img src="assets/animation/location.gif" class="imageColor" />
+                <p class="weatherItem country"></p>
+              </span>
+            </div>
+          </div>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/nqobile-ngobeni-57b040237/">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://wa.me/+27618187972">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- home page -->
+      <section class="index active wrap" id="index">
+        <div class="indexContent">
+          <video autoplay muted loop id="video">
+            <source src="assets/videos/smoke.mp4" type="video/mp4" />
+          </video>
+          <div id="container8" class="indexText">
+            <div id="inner8">
+              <div class="contentText">
+                <h1>
+                  Hi,<br />I'm Nqobile,<br /><span
+                    ><h4 class="software">Software-Developer.</h4></span
+                  >
+                </h1>
+                <p class="proffession">Front-End Developer</p>
+                <p class="shortText">
+                  I am an enthusiastic software developer who specializes in
+                  front end development. I enjoy problem solving and writing
+                  complex yet user-friendly code.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="subscribe">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSegkW5HWjnWuNdo6lU39yLcxmpW7VYVtQstL3WrMH6y6S5qXA/viewform?embedded=true"
+              width="1900"
+              height="500"
+              frameborder="0"
+              marginheight="0"
+              marginwidth="0"
+              >Loading…</iframe
+            >
+          </div>
+        </div>
+      </section>
+      <!-- about Page -->
+      <section class="about wrap second" id="about">
+        <div class="aboutContent">
+          <h1 class="title">About Me</h1>
+          <div class="contentContainer">
+            <div id="container1">
+              <div id="inner1">
+                <div class="content">
+                  <h4>What I do?</h4>
+                  <p class="p1">
+                    I build complex, user-friendly software development,
+                    primarily for websites, web apps, and native applications. I
+                    enjoy writing and learning code, and my objective is to
+                    become a full stack engineer by the first quarter of 2024.
+                    My ambition is to become a proficient software engineer,
+                    computer science will be my next endeavor.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="container2">
+              <div id="inner2">
+                <div class="content">
+                  <h4>Why do I write code?</h4>
+                  <p class="p2">
+                    Computers have become indispensable in our daily lives, and
+                    I believe they will become even more so in the future. I
+                    hope to use my skills to work with people and solve problems
+                    that will make a difference in our daily lives; after all,
+                    coding is in essence problem solving, and I enjoy solving
+                    problems.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="container3">
+              <div id="inner3">
+                <div class="content">
+                  <h4>Why do I write code?</h4>
+                  <p class="p2">
+                    Computers have become indispensable in our daily lives, and
+                    I believe they will become even more so in the future. I
+                    hope to use my skills to work with people and solve problems
+                    that will make a difference in our daily lives; after all,
+                    coding is in essence problem solving, and I enjoy solving
+                    problems.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="skillsContainer">
+            <div id="container4">
+              <div id="inner4">
+                <div class="sectionContainer">
+                  <div class="skills">
+                    <h3>Skills</h3>
+                    <ul>
+                      <li>
+                        <span id="link">
+                          <a
+                            href="https://en.wikipedia.org/wiki/User_interface_design"
+                            >UI/UX<i
+                              class="fa-solid fa-arrow-up-right-from-square"
+                            ></i>
+                          </a>
+                        </span>
+                        <br />Designing web/app interfaces
+                      </li>
+                      <li>
+                        <span id="link">
+                          <a href="https://en.wikipedia.org/wiki/Web_developer"
+                            >Web-Developer<i
+                              class="fa-solid fa-arrow-up-right-from-square"
+                            ></i>
+                          </a>
+                        </span>
+                        <br />
+                        Web app development
+                      </li>
+                      <li>
+                        <span id="link">
+                          <a
+                            href="https://en.wikipedia.org/wiki/Mobile_app_development"
+                            >App-Developer<i
+                              class="fa-solid fa-arrow-up-right-from-square"
+                            ></i>
+                          </a>
+                        </span>
+                        <br />
+                        Ios/android app developer
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="experience">
+                    <h3>Experience</h3>
+                    <ul>
+                      <li id="link">
+                        2022 <br />
+                        <a href="#">
+                          East-Rand Rangers<i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                          ></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="education">
+                    <h3>Education</h3>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.google.com/search?q=bedfordview+high+school&client=avast-a-1&sxsrf=APwXEdfeTuaN62an6aBADl15fzN353yxqQ%3A1683994018418&ei=orVfZNGeGYGExc8Ps7SIwAc&gs_ssp=eJzj4tZP1zcsz61KzzEvMmC0UjWoMEy1NDU0TE1NtUgysDRINbYyqDAyNbewsDQ3NTQ2N0o0TE32Ek9KTUnLL0opy0wtV8jITM9QKE7OyM_PAQBjCheU&oq=bedfordview+hige&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAxgAMg0ILhANEK8BEMcBEIAEMgcIABANEIAEMgcIABANEIAEMgcIABANEIAEMgcIABANEIAEMgcIABANEIAEMgcIABANEIAEMgcIABANEIAEMgcIABANEIAEMgYIABAeEA0yGwguEA0QrwEQxwEQgAQQlwUQ3AQQ3gQQ4AQYAToHCAAQigUQQzoHCC4QigUQQzoLCC4QgAQQxwEQrwE6BQgAEIAEOg0ILhCKBRDHARCvARBDOgsILhCvARDHARCABDoZCC4QrwEQxwEQgAQQlwUQ3AQQ3gQQ4AQYAToHCCEQoAEQCkoECEEYAFAAWOYbYIQnaAFwAXgAgAGZBIgBhxKSAQkyLTQuMi4wLjGYAQCgAQHAAQHaAQYIARABGBQ&sclient=gws-wiz-serp"
+                          id="link"
+                        >
+                          <span id="link"
+                            >Bedfordview-high school<i
+                              class="fa-solid fa-arrow-up-right-from-square"
+                            ></i
+                          ></span>
+                        </a>
+                      </li>
+                      <li id="link">
+                        <a href="https://skillsexcel.co.za/">
+                          Skills-excel institute<i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                          ></i>
+                        </a>
+                      </li>
+                      <li id="link">
+                        <a href="https://www.rosebankcollege.co.za/">
+                          Rosebank college<i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                          ></i>
+                        </a>
+                      </li>
+                      <li id="link">
+                        <a
+                          href="https://learn.microsoft.com/en-us/certifications/"
+                        >
+                          Microsoft certification<i
+                            class="fa-solid fa-arrow-up-right-from-square"
+                          ></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services page -->
+      <section class="services wrap third" id="services">
+        <h1 class="title">My Services</h1>
+        <div class="serviceContainer">
+          <div id="container5">
+            <div id="inner5">
+              <div class="service">
+                <h3>UI/UX</h3>
+                <ul>
+                  <li>UX Design</li>
+                  <li>UI and interaction design</li>
+                  <li>Wireframe and interactive Prototyping</li>
+                  <li>User research and analysis</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="container6">
+            <div id="inner6">
+              <div class="service" id="webServices">
+                <h3>Web services</h3>
+                <ul>
+                  <li>Web design</li>
+                  <li>Web programming</li>
+                  <li>Web development support and maintenance</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="container7">
+            <div id="inner7">
+              <div class="service">
+                <h3>App services</h3>
+                <ul>
+                  <li>Mobile web app development</li>
+                  <li>IOS and Android app development</li>
+                  <li>Mobile app porting</li>
+                  <li>Debuging and maintenance</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="progressContainer">
+          <div class="progress">
+            <div class="skill">
+              <div class="skill-name">HTML & CSS</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="89%" style="max-width: 89%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-name">JavaScript</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="83%" style="max-width: 83%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="progress">
+            <div class="skill">
+              <div class="skill-name">Kotlin</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="67%" style="max-width: 67%"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <div class="skill-name">React-Native</div>
+              <div class="skill-bar">
+                <div class="skill-per" per="78%" style="max-width: 78%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- projects page -->
+      <section class="projects wrap fourth" id="projects">
+        <div class="projectsContainer">
+          <h1 class="title">My Projects</h1>
+          <div class="projectsContent">
+            <div class="project1">
+              <a href="assets/Projects/calculator/index.html">
+                <div
+                  class="project"
+                  style="
+                    background-image: url(assets/images/calculator.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  "
+                >
+                  <h3>Simple-Calculator</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="project2">
+              <a href="assets/Projects/tic-tac-toe/index.html">
+                <div
+                  class="project"
+                  style="
+                    background-image: url(assets/images/ticTacToe.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-blend-mode: lighten;
+                  "
+                >
+                  <h3>Tic-Tac-Toe</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="project3">
+              <a href="assets/Projects/chrome-dino-game-clone-main/index.html">
+                <div
+                  class="project"
+                  style="
+                    background-image: url(assets/images/chrome\ rex.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  "
+                >
+                  <h3>Chrome-Dinosaur-Game</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="project4">
+              <a href="assets/Projects/JavaScript-Clock-master/index.html">
+                <div
+                  class="project"
+                  style="
+                    background-image: url(assets/images/Clock\ Icon\ _\ Iphone\ clock\,\ Clock\,\ Clock\ icon.jpeg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  "
+                >
+                  <h3>Clock</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="project5">
+              <a href="assets/Projects/YouTube-Design-Clone-master/index.html">
+                <div
+                  class="project youtube"
+                  style="
+                    background-image: url(assets/images/youtube.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  "
+                >
+                  <h3>YouTube-Clone(HTML+CSS Only)</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="project6">
+              <a href="assets/Projects/flappy-bird-clone-main/index.html">
+                <div
+                  class="project youtube"
+                  style="
+                    background-image: url(assets/images/floppy\ bird.png);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  "
+                >
+                  <h3>Floppy-Bird</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="project7">
+              <a href="assets/Projects/weather web-application/index.html">
+                <div
+                  class="project youtube"
+                  style="
+                    background-image: url(assets/images/weather.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  "
+                >
+                  <h3>NqobileForecast</h3>
+                </div>
+              </a>
+            </div>
+
+            <div class="project8">
+              <a href="assets/Projects/NqobilePicSearch/index.html">
+                <div
+                  class="project youtube"
+                  style="
+                    background-image: url(assets/Projects/NqobilePicSearch/assets/images/digital-abstract-paint-blob-art-0na2yakeez7la7pw.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                  "
+                >
+                  <h3>NqobileArtSearch</h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact page -->
+      <section class="contact wrap fifth" id="contact">
+        <h1 class="title">Contact Me</h1>
+        <div class="contactContainer">
+          <div class="contactForm">
+            <form action="" name="submit-to-google-sheet">
+              <div class="name">
+                <label for="name">Full Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="e.g Nqobile Ngobeni"
+                  class="unfocus"
+                  required
+                />
+              </div>
+              <div class="email">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="NqobileNgobeni72@gmail.Com"
+                  class="unfocus"
+                  required
+                />
+              </div>
+              <div class="serviceOption">
+                <label for="services">Choose a service:</label>
+                <select name="services" id="serviceOption">
+                  <option value="UI/UX-services">UI/UX-Services</option>
+                  <option value="Web-services">Web-Services</option>
+                  <option value="App-services">App-Services</option>
+                </select>
+              </div>
+              <div class="message">
+                <label for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="20"
+                  rows="5"
+                  placeholder="Description of required services: Wireframe and interactive prototyping, etc."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="button" id="button">
+                <div class="cv tooltip">
+                  <a
+                    href="assets/documents/NqobileNgobeni CV .pdf"
+                    download="Nqobile Ngobeni CV"
+                  >
+                    <img
+                      src="assets/animation/offer.gif"
+                      width="70px"
+                      style="opacity: 0.5"
+                    />
+                  </a>
+                  <span class="tooltiptext">Download CV</span>
+                </div>
+
+                <button type="submit" class="btn btn-background-slide">
+                  Send
+                </button>
+              </div>
+            </form>
+
+            <span class="msg" id="msg"></span>
+          </div>
+          <div class="address">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114393.81658215777!2d28.10125857360731!3d-26.365111205029518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e951c680c51de0f%3A0x80806378d865addd!2sKatlehong!5e0!3m2!1sen!2sza!4v1680830530287!5m2!1sen!2sza"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+      <div class="footer">
+        <div>
+          <div class="copyright">
+            <i class="fa-regular fa-copyright"></i>
+            2023 Nqobile. All rights reserved . Terms of use | Privacy policy
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- javascript for recieving user input on excel -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbx-xwEXD3bBAYATSTRHsKeYIA5B78AJRBKCgbBQQftNPMJRVn-DMEXhZTew0cdlNGc/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        msg.innerHTML = `<img
+              class="deliveryIcon imageColor"
+              src="assets/animation/deliver.gif"
+              style="opacity: 0.5
+              "
+            />`; // Show loading message
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Success! Your message has been delivered.";
+            msg.classList.add("success");
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => {
+            msg.innerHTML =
+              "Oops! Something went wrong. Please try again later.";
+            msg.classList.add("error");
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          });
+      });
+    </script>
+  </body>
+</html>
