@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NqobileForecast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="../../../animation.css">
+    <script defer src="../../../index.js"></script>
+</head>
+
+<body>
+            <!-- page loader -->
+            <div class="loader">
+                <div class="wrapper" id="wrapper">
+                    <video autoplay muted loop id="video">
+                        <source src="../../animation/glitch.mp4" type="video/mp4">
+                    </video>
+                    <div id="gif-container">
+                        <img src="../../animation/programmer.gif" alt="">
+                      </div>
+                    <h4 id="demo"></h4> 
+                </div>
+            </div>
+    <div class="background" id="background">
+        <img id="backgroundImage" src="assets/images/peakpx (17).jpg" alt="">
+    </div>
+    <div class="container">
+        <div class="logo">
+            <img src="assets/icons/logo.png" alt="">
+        </div>
+        <form>
+            <input type="text" placeholder="Enter City" id="city-input" >
+            <input type="submit" value="Get Weather">
+        </form>
+        <div id="weather-data">
+            <div class="icon">
+                -
+                <!-- icon displays here -->
+            </div>
+            <div class="temperature">
+                -
+            </div>
+            <div class="discription">
+                -
+            </div>
+            <div class="errorMessage" id="errorMessage">
+                <span class="errorCode">Error code: W-001</span>
+                <span class="message">Sorry, we couldn't find weather information for the city you entered. Please check the spelling or try a different city name.</span>
+            </div>
+            <div class="details">
+                <div>Feels like: -</div>
+                <div>Humidity: -</div>
+                <div>Wind speed: -</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="shortcut icon" href="assets/icons/calculator.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../../../animation.css">
+    <script defer src="../../../index.js"></script>
+</head>
+<body>
+    <!-- page loader -->
+    <div class="loader">
+        <div class="wrapper" id="wrapper">
+            <video autoplay muted loop id="video">
+                <source src="../../animation/glitch.mp4" type="video/mp4">
+            </video>
+            <div id="gif-container">
+                <img src="../../animation/programmer.gif" alt="">
+              </div>
+            <h4 id="demo"></h4> 
+        </div>
+    </div>
+<div class="container">
+    <div class="calculator-grid">
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        <button id="del-all" data-all-clear class="span-two">AC</button>
+        <button id="del-all" data-delete ><img src="assets/icons/delete (1).png " class="icon"></button>
+        <button id="operator" data-operation>÷</button>
+        <button id="number" data-number>1</button>
+        <button id="number"  data-number>2</button>
+        <button id="number"  data-number>3</button>
+        <button id="operator" data-operation>*</button>
+        <button id="number"  data-number>4</button>
+        <button id="number"  data-number>5</button>
+        <button id="number" data-number>6</button>
+        <button id="operator" data-operation>+</button>
+        <button id="number" data-number>7</button>
+        <button id="number" data-number>8</button>
+        <button id="number" data-number>9</button>
+        <button id="operator" data-operation>-</button>
+        <button id="number" data-number>.</button>
+        <button id="number" data-number>0</button>
+        <button id="operator" data-equals class="span-two">=</button>
+        <script src="app.js" defer></script>
+    </div>
+</div>
+</body>
+</html>

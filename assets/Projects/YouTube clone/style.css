@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  /* color: white; */
+}
+/* header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  font-size: 25px;
+  > a {
+    text-decoration: none;
+    color: white;
+  }
+}
+/* input  */
+.form-control.search.text-bg-dark {
+  width: 500px;
+}
+.btn.btn-outline-light.custom-outline,
+.form-control {
+  border: 1px solid rgba(121, 121, 121, 0.471);
+}
+
+/* themes */
+.user {
+  > i {
+    font-size: 30px;
+  }
+}
+/* display */
+.display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+/* video appearance */
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  overflow: none;
+  flex: 1;
+}
+
+.frame iframe {
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+}
+.descriptionContainer {
+  display: flex;
+  position: relative;
+  /* padding: 10px; */
+  gap: 5px;
+  width: 400px;
+  .description {
+    flex: 1;
+    .videoTitle {
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .channel {
+      font-weight: 400;
+      font-size: 13px;
+    }
+  }
+  .channelIcon img {
+    border-radius: 50%;
+  }
+}
+
+/* responsiveness */
+/* Tablets and Small Screens */
+@media screen and (min-width: 577px) and (max-width: 991px) {
+  .form-control.search.text-bg-dark {
+    width: 50%;
+  }
+}
