@@ -1,4 +1,10 @@
 {
+  "homepage": "portfolioV1",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "rmdir /s /q dist && mkdir dist && copy *.html dist && copy *.js dist && copy *.css dist"
+  },
   "dependencies": {
     "axios": "^1.4.0",
     "gh-pages": "^6.1.1"
